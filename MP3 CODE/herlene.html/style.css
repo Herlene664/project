@@ -1,0 +1,351 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000; /* Set text color to black */
+    background: whitesmoke; /* Set background color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    font-size: 24px;
+    color: orange;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+.search-box button {
+    padding: 5px;
+    background: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.welcome-section .highlight {
+    color: orange;
+    font-weight: bold;
+}
+
+.read-more {
+    background: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Login Form */
+.login-form {
+    max-width: 300px;
+    background: #333;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    background: orange;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: orange;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #de5d83;
+}
+
+/* Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.content-layout {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the start */
+    margin: 20px;
+}
+
+.sidebar {
+    flex: 1; /* Sidebar takes up 1 part of the flex container */
+    background: #333; /* Sidebar background color */
+    padding: 15px; /* Padding for sidebar */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 250px; /* Space between sidebar and main content */
+}
+
+.main-content {
+    flex: 3; /* Main content takes up 3 parts of the flex container */
+    padding: 20px;
+}
+
+/* Content Item Styles */
+ 
+.content-item {
+    display: none; /* Hide content items by default */
+    width: 100%; /* Set width to 100% for proper alignment */
+}
+
+.content-item.active {
+    display: block; /* Show active content item */
+}
+
+/* Member Container */
+.member-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Video Grid */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-container {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 200px;
+    transition: transform 0.3s;
+    align-items: row;
+}
+
+.video-container:hover {
+    transform: scale(1.05);
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px; /* Location of the box */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width for modal */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        margin: 10px; /* Adjust body margin for smaller screens */
+    }
+    header h1 {
+        font-size: 2em; /* Adjust header font size */
+    }
+    .hero h2 {
+        font-size: 2em; /* Adjust hero heading size */
+    }
+    .hero p {
+        font-size: 1em; /* Adjust hero paragraph size */
+    }
+    h2 {
+        font-size: 1.2em; /* Adjust h2 size */
+    }
+    .text-container {
+        width: 100%; /* Full width for text containers */
+    }
+}
+
+/* Canteen Image Styles */
+.canteen-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.canteen-image img {
+    width: 15px; /* Max width for images */
+    height: 15px; /* Auto height */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.canteen-image h3 {
+    margin-top: 10px; /* Space above heading */
+    font-size: 2.1em; /* Heading size */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+}
+
+/* Sidebar Styles */
+.sidebar h2 {
+    color: #fff; /* Sidebar heading color */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove list style */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.sidebar ul li a {
+    color: orange; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
